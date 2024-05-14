@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Currency Converter</h1>
+  <input [(ngModel)]="amount" placeholder="Enter amount" />
+  <button (click)="convert()">Convert</button>
+  <div class="results" *ngIf="convertedAmounts">
+    <p>USD: {{ convertedAmounts.USD }}</p>
+    <p>EUR: {{ convertedAmounts.EUR }}</p>
+    <p>GBP: {{ convertedAmounts.GBP }}</p>
+    <p>JPY: {{ convertedAmounts.JPY }}</p>
+    <p>BTC: {{ convertedAmounts.BTC }}</p>
+  </div>
+</div>
